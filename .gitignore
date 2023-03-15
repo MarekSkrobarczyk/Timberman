@@ -1,5 +1,8 @@
 # Prerequisites
 *.d
+*.tlog
+*.idb
+*.pdb
 
 # Compiled Object files
 *.slo
@@ -30,5 +33,5 @@
 *.exe
 *.out
 *.app
-Timber/Debug
-Timber/.vs/
+Timber/Debug/*
+Timber/.vs/*
