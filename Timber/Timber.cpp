@@ -116,6 +116,13 @@ int main()
     messageText.setFillColor(Color::White);
     scoreText.setFillColor(Color::White); 
 
+    // position the text 
+
+    FloatRect textRect = messageText.getLocalBounds();
+    
+    messageText.setOrigin(textRect.left + textRect.width / 2.0f, textRect.top + textRect.height / 2.0f);
+    messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
+
     while (window.isOpen())
     {
         if (Keyboard::isKeyPressed(Keyboard::Escape))
