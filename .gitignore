@@ -31,3 +31,4 @@
 *.out
 *.app
 Timber/Debug
+Timber/.vs/
