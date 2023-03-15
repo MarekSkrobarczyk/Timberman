@@ -9,19 +9,9 @@ using namespace sf;
 
 int main()
 {
-    // Add font
-
-    Font font;
-    //font.loadFromFile(Font\)
+    
     // create video mode object
 
-    //add Text object
-
-    Text myText;
-    myText.setString("Press enter to start");
-    myText.setCharacterSize(75);
-    myText.setFillColor(Color::White);
-    myText.setFont(font);
 
     sf::VideoMode vm(1920, 1080);
     
@@ -107,6 +97,24 @@ int main()
     // pause state
 
     bool paused = true;
+    int score = 0;
+    Text messageText;
+    Text scoreText; 
+
+    Font font;
+    font.loadFromFile("Font/KOMIKAP_.ttf");
+
+    messageText.setFont(font);
+    scoreText.setFont(font);
+
+    messageText.setString("Press ENTER to Start");
+    scoreText.setString("Score=0");
+
+    messageText.setCharacterSize(75);
+    scoreText.setCharacterSize(100);
+
+    messageText.setFillColor(Color::White);
+    scoreText.setFillColor(Color::White); 
 
     while (window.isOpen())
     {
